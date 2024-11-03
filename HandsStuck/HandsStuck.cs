@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine.XR.OpenXR;
 
-namespace ModThatFixesControllerTrackingOnOculusPCVRWhenUsingSteamVR
+namespace HandsStuck
 {
     public class HandsStuck : MelonMod
     {
