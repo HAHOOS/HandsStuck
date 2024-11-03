@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+
+		<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+
+		<!-- Directory used for references and PostBuild events -->
+		<GameDirectory>C:\Oculus\Software\stress-level-zero-inc-bonelab</GameDirectory>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Il2CppInterop.Runtime">
+		  <HintPath>$(GameDirectory)\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+		  <HintPath>$(GameDirectory)\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR">
+			<HintPath>$(GameDirectory)\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GameDirectory)\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>$(GameDirectory)\MelonLoader\Il2CppAssemblies\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GameDirectory)\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(GameDirectory)\MelonLoader\net6\MelonLoader.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(GameDirectory)\Mods&quot;" />
+	</Target>
+</Project>
