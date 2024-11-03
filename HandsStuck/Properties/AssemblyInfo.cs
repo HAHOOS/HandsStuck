@@ -1,11 +1,11 @@
-﻿using HandsStuck;
+﻿using ModThatFixesControllerTrackingOnOculusPCVRWhenUsingSteamVR;
 using MelonLoader;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
 #region MelonLoader
 
-[assembly: MelonInfo(typeof(HandsStuck.HandsStuck), "HandsStuck", "1.0.0", "HAHOOS", "https://thunderstore.io/c/bonelab/p/HAHOOS/HandsStuck")]
+[assembly: MelonInfo(typeof(ModThatFixesControllerTrackingOnOculusPCVRWhenUsingSteamVR.HandsStuck), "HandsStuck", "1.0.0", "HAHOOS", "https://thunderstore.io/c/bonelab/p/HAHOOS/HandsStuck")]
 [assembly: MelonGame("Stress Level Zero", "BONELAB")]
 [assembly: MelonColor(0, 191, 35, 0)]
 
@@ -20,9 +20,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("HandsStuck")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: AssemblyVersion(HandsStuck.HandsStuck.Version)]
-[assembly: AssemblyFileVersion(HandsStuck.HandsStuck.Version)]
-[assembly: AssemblyInformationalVersion(HandsStuck.HandsStuck.Version)]
+[assembly: AssemblyVersion(ModThatFixesControllerTrackingOnOculusPCVRWhenUsingSteamVR.HandsStuck.Version)]
+[assembly: AssemblyFileVersion(ModThatFixesControllerTrackingOnOculusPCVRWhenUsingSteamVR.HandsStuck.Version)]
+[assembly: AssemblyInformationalVersion(ModThatFixesControllerTrackingOnOculusPCVRWhenUsingSteamVR.HandsStuck.Version)]
 
 #endregion General
 
