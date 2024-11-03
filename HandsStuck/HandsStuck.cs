@@ -10,7 +10,7 @@ namespace HandsStuck
 
         public override void OnInitializeMelon()
         {
-            var eyegaze = OpenXRSettings.Instance.features.First(x => x.name == "EyeGazeInteraction Standalone");
+            var eyegaze = OpenXRSettings.Instance.features.First(x => x.name.StartsWith("EyeGazeInteraction"));
             if (eyegaze?.enabled == true)
             {
                 eyegaze.enabled = false;
